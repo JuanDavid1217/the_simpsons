@@ -15,7 +15,7 @@
 <style>
     .off-canvas-logo {
         --burguer-size: 1.5rem;
-        --burger-spacing: calc((var(--burguer-size) / 5));
+        --burger-spacing: calc(var(--burguer-size) / 5);
         --burger-radius: calc(var(--burger-spacing) / 2);
 
         position: relative;
@@ -31,7 +31,6 @@
         inset: 0;
         cursor: pointer;
         opacity: 0;
-        z-index: 2;
     }
 
     .off-canvas-burger {
@@ -43,7 +42,7 @@
         transform: rotate(0deg) translate(0, calc(var(--burger-spacing) * 2));
         transition: transform .3s ease, background-color .3s ease;
         transform-origin: top left;
-        z-index: 1;
+        z-index: -1;
         background-color: var(--text-color-light);
         box-shadow: 0 0 .5rem .02rem #0009;
     }
