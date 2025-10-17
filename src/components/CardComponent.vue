@@ -6,7 +6,7 @@
 
 <style>
     .card {
-        margin: 1rem;
+        margin: .5rem;
         border-radius: .5rem;
         box-shadow: 0 0 .3rem .02rem #000;
         padding: .5rem;

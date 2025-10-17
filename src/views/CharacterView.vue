@@ -10,7 +10,7 @@
         flex-grow: 1;
         background-color: var(--text-color-light);
         display: grid;
-        padding: 2rem;
+        padding: .5rem;
     }
 
     @media screen and (min-width: 576px) {
