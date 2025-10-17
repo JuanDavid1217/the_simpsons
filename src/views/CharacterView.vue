@@ -1,6 +1,6 @@
 <template>
     <main>
-        <CardComponent v-for="(item, id) in data" :name="item.name" :id="item.id" :image="item.portrait_path" :key="id"/>
+        <CharacterCardComponent v-for="(item, id) in data" :name="item.name" :id="item.id" :image="item.portrait_path" :occupation="item.occupation" :age="item.age" :status="item.status" :key="id"/>
         <div ref="sentinel" class="sentinel"></div>
     </main>
 </template>
@@ -10,7 +10,7 @@
         flex-grow: 1;
         background-color: var(--text-color-light);
         display: grid;
-        padding: .5rem;
+        padding: 1rem;
     }
 
     @media screen and (min-width: 576px) {
@@ -34,12 +34,12 @@
 
 <script>
 import {get} from '@/services/GeneralService'
-import CardComponent from '@/components/CardComponent.vue'
+import CharacterCardComponent from '@/components/CharacterCardComponent.vue'
 
 export default {
     name: 'CharacterView',
     components: {
-        CardComponent
+        CharacterCardComponent
     },
     data() {
         return {
@@ -69,6 +69,7 @@ export default {
         async getCharacters(endpoint) {
             const response = await get(endpoint);
             if (response.status==200) {
+                console.log(response)
                 this.data = this.data.concat(response.data.results);
                 this.page++
             }
