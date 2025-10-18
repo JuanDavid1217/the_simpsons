@@ -1,7 +1,7 @@
 <template>
   <HeaderComponent/>
   <router-view/>
-  <footer class="footer">footer</footer>
+  <FooterComponent/>
 </template>
 
 <style>
@@ -74,11 +74,13 @@
 
 <script>
   import HeaderComponent from '@/components/HeaderComponent.vue'
-
+  import FooterComponent from '@/components/FooterComponent.vue'
+  
   export default {
     name: 'App',
     components: {
-      HeaderComponent
+      HeaderComponent,
+      FooterComponent
     }
   }
 </script>
