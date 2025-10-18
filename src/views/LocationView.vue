@@ -1,6 +1,6 @@
 <template>
     <main>
-        <CardComponent v-for="(item, id) in data" :name="item.name" :image="item.image_path" :id="item.id" :key="id"/>
+        <LocationCardComponent v-for="(item, id) in data" :name="item.name" :image="item.image_path" :id="item.id" :town="item.town" :use="item.use" :key="id"/>
         <div ref="sentinel" class="sentinel"></div>
     </main>
 </template>
@@ -27,13 +27,13 @@
 </style>
 
 <script>
-import CardComponent from "@/components/CardComponent.vue"
+import LocationCardComponent from "@/components/LocationCardComponent.vue"
 import { get } from "@/services/GeneralService"
 
 export default {
     name: 'LocationView',
     components: {
-        CardComponent
+        LocationCardComponent
     },
     data() {
         return {

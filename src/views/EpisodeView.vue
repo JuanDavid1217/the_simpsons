@@ -1,6 +1,6 @@
 <template>
     <main>
-        <CardComponent v-for="(item, id) in data" :name="item.name" :id="item.id" :image="item.image_path" :key="id"/>
+        <EpisodeCardComponent v-for="(item, id) in data" :name="item.name" :id="item.id" :image="item.image_path" :season="item.season" :synopsis="item.synopsis" :key="id"/>
         <div ref="sentinel" class="sentinel"></div>
     </main>
 </template>
@@ -27,13 +27,13 @@
 </style>
 
 <script>
-import CardComponent from "@/components/CardComponent.vue"
+import EpisodeCardComponent from "@/components/EpisodeCardComponent.vue"
 import { get } from "@/services/GeneralService"
 
 export default {
     name: 'EpisodeView',
     components: {
-        CardComponent
+        EpisodeCardComponent
     },
     data() {
         return {

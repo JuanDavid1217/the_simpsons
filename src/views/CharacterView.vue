@@ -69,7 +69,6 @@ export default {
         async getCharacters(endpoint) {
             const response = await get(endpoint);
             if (response.status==200) {
-                console.log(response)
                 this.data = this.data.concat(response.data.results);
                 this.page++
             }
