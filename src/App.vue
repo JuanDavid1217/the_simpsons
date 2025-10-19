@@ -32,7 +32,7 @@
     --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
 
     /*General*/
-    --logo-size: 2.7rem;
+    --logo-size: 5rem;
     --padding-x: 2rem;
     --padding-y: 0.5rem;
     --general-padding: 1rem;

@@ -6,16 +6,16 @@
 
 <style>
     .logo {
-        width: 6rem;
+        width: var(--logo-size);
+        height: var(--logo-size);
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-grow: 0;
         flex-shrink: 0;
+        border: thin solid red;
     }
 
     .logo img {
-        object-fit: cover;
+        object-fit: contain;
         object-position: center
     }
 </style>
