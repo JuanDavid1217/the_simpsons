@@ -11,7 +11,6 @@
         display: flex;
         flex-grow: 0;
         flex-shrink: 0;
-        border: thin solid red;
     }
 
     .logo img {
