@@ -1,6 +1,6 @@
 <template>
     <section class="logo">
-        <img src="../assets/images/logo.png" alt="The Simpsons logo">
+        <img src="../assets/images/logo.png" alt="The Simpsons Frontend logo">
     </section>
 </template>
 
