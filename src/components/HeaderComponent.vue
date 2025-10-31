@@ -13,7 +13,6 @@
         align-items: center;
         position: sticky;
         top: 0;
-        transition: box-shadow 0.3s linear;
         z-index: 1;
     }
 
@@ -24,9 +23,10 @@
         inset: 0;
         backdrop-filter: blur(.4rem);
         background-color: var(--color-filter-blur);
+        transition: box-shadow 0.3s linear;
     }
 
-    .header.scrolled {
+    .header.scrolled::before {
         box-shadow: 0 .2rem .5rem .02rem #0009;
     }
 </style>
